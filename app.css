@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    background-color: #E7E7E7;
+    font-family: Marvel;
+}
+  
+#game-title {
+    width: 95%;
+    margin: 40px 0 0 0;
+}
+
+#game-title.small {
+    width: 50%;
+    margin: 10px;
+}
+
+#home {
+    position: fixed;
+    top: 0;
+    right: 10px;
+    font-family: Marvel;
+    background-color: #white;
+    color: #000042;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px;
+    width: 100px;
+    margin: 10px auto;
+}
+
+#start-screen button {
+    display: block;
+    font-family: Marvel;
+    background-color: #AA1428;
+    font-weight: bold;
+    color: white;
+    width: 75%;
+    height: 200px;
+    font-size: 100px;
+    border: 10px solid #000042;
+    border-radius: 20px;
+    margin: 20px auto;
+}
+
+#options-screen #current-selection {
+    display: inline;
+    font-style: italic;
+    font-size: 50px;
+    padding: 10px;
+}
+
+#options-screen label {
+    font-size: 50px;
+    display: block;
+    margin: 20px 10px;
+}
+
+#options-screen input {
+    font-size: 50px;
+    padding: 10px;
+}
+
+#options-screen button {
+    font-family: Marvel;
+    background-color: #000042;
+    font-weight: bold;
+    color: white;
+    width: 75%;
+    height: 200px;
+    font-size: 100px;
+    border-radius: 20px;
+    margin: 20px 10px;
+}
+
+
+#lowscore-text {
+    font-style: italic;
+    font-size: 40px;
+}
+
+#upper-text {
+    font-size: 80px;
+    margin: 10px;
+}
+
+#game div {
+    border: 1px solid black;
+    width: 10%;
+    height: 150px;
+    margin: 10px;
+    display: inline-block;
+    background: linear-gradient(61deg, rgba(30,19,212,1) 0%, rgba(77,138,181,1) 0%, rgba(30,38,57,1) 100%);
+    border-radius: 10px;
+}
+
+#game div.player1card {
+    background: none;
+    background-color: #AA1428B3; 
+    border: white;
+}
+
+#game div.player2card {
+    background: none;
+    background-color: #000042B3;
+    border: white;
+}
+
+#score-board {
+    font-size: 40px;
+    margin: 20px;
+    text-align: center;
+}
+
+#score-board #player1-score {
+    display: inline-block;
+    border: 4px solid #AA1428; 
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    width: 40%;
+    background-color: #AA1428B3;
+}
+
+#score-board #player2-score {
+    display: inline-block;
+    border: 4px solid #000042;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    width: 40%;
+    background-color: #000042B3;
+}
+
+#lower-text{
+    color: #AA1428;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+#play-again {
+    font-family: Marvel;
+    background-color: #000042;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px;
+    width: 200px;
+    margin: 10px auto;
+}

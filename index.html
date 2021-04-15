@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MARVELous Memory</title> 
+        <link rel="stylesheet" href="app.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Marvel&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <header>
+            <img src="images/marvelousmemory.png" id="game-title" alt="MARVELous Memory title image">
+        </header>
+
+        <button id="home">Home</button>    
+
+        <div id="start-screen">
+            <form>
+                <button id="select-one-player-game">One-player game</button>
+                <button id="select-two-player-game">Two-player game</button>
+            </form>
+        </div> 
+
+        <div id="options-screen">
+            <form>
+                <label for="numCards">Select the number of cards
+                    <input type="range" id="numCards" name="numCards" min="4" max="44" value="16" step="2">
+                </label>
+                <p id="current-selection"></p><br>
+
+                <div id="one-player-options">
+                    <label for="name">Enter your name
+                        <input type="text" id="name" name="name" placeholder="Player name">
+                    </label>
+                    <button id="start-one-player-game">START GAME</button>
+                </div> 
+
+                <div id="two-player-options">
+                    <label for="name1">Enter Player 1's name
+                        <input type="text" id="name1" name="name1" placeholder="Player 1">
+                    </label>
+                    <label for="name2">Enter Player 2's name
+                        <input type="text" id="name2" name="name2" placeholder="Player 2">
+                    </label>
+                    <button id="start-two-player-game">START GAME</button>
+                </div> 
+        
+            </form>
+        </div>
+        
+        <div id="lowscore-text">
+        </div>
+
+        <div id="upper-text"></div>
+        </div>
+
+        <div id="game">
+        </div>
+
+        <div id="score-board">
+            <div id="player1-score"></div>
+            <div id="player2-score"></div>
+        </div>
+
+        <div id="lower-text"></div>
+        </div>
+
+        <button id="play-again">Play again</button>   
+
+
+        <script src="app.js"></script>
+    </body>
+
+</html>
+
