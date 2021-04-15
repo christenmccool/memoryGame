@@ -236,7 +236,7 @@ function handleCardClickTwoPlayer(event) {
 
                 // If it is Player 1's turn, give Player 1 a point and style the cards red
                 if (player1turn) {
-                    upperTxt.innerText = `${name1.value}, you made a match!`;
+                    lowerTxt.innerText = `${name1.value}, you made a match!`;
                     plyr1score++;
                     player1Score.innerText = `${name1.value}: ${plyr1score}`;
                 
@@ -250,7 +250,7 @@ function handleCardClickTwoPlayer(event) {
 
                 // If it is Player 2's turn, give Player 2 a point and style the cards blue
                 } else {
-                    upperTxt.innerText = `${name2.value}, you made a match!`;  
+                    lowerTxt.innerText = `${name2.value}, you made a match!`;  
                     plyr2score++;
                     player2Score.innerText = `${name2.value}: ${plyr2score}`; 
 
@@ -266,7 +266,7 @@ function handleCardClickTwoPlayer(event) {
                 // All cards have been matched
                 if (matchedCards.length === shuffledCards.length) {
                     setTimeout (() => { 
-                        upperTxt.innerText = `All cards have been matched`;
+                        // lowerTxt.innerText = `All cards have been matched`;
                         if (plyr1score > plyr2score) {
                             lowerTxt.innerText = `${name1.value} won!`;
                         } else if (plyr1score < plyr2score) {
@@ -282,10 +282,10 @@ function handleCardClickTwoPlayer(event) {
                 } else {
                     setTimeout (() => { 
                         if (player1turn) {
-                            upperTxt.innerText = `Please go again, ${name1.value}`;
+                            lowerTxt.innerText = `Please go again, ${name1.value}`;
                             currentAttempt = [];
                         } else {
-                            upperTxt.innerText = `Please go again, ${name2.value}`;
+                            lowerTxt.innerText = `Please go again, ${name2.value}`;
                             currentAttempt = []; 
                         }
 
@@ -298,9 +298,9 @@ function handleCardClickTwoPlayer(event) {
                 
                 setTimeout(() => {
                     if (player1turn) {
-                        upperTxt.innerText = `Not a match`;
+                        lowerTxt.innerText = `Not a match`;
                     } else {
-                        upperTxt.innerText = `Not a match`;
+                        lowerTxt.innerText = `Not a match`;
                     }
 
                     setTimeout(() => {
@@ -310,9 +310,9 @@ function handleCardClickTwoPlayer(event) {
                         currentAttempt = [];
 
                         if (player1turn) {
-                            upperTxt.innerText = `${name1.value}'s turn.`;
+                            lowerTxt.innerText = `${name1.value}'s turn.`;
                         } else {
-                            upperTxt.innerText = `${name2.value}'s turn.`;
+                            lowerTxt.innerText = `${name2.value}'s turn.`;
                         }
                     }, 1000);
 
@@ -390,7 +390,7 @@ playAgainBtn.addEventListener('click', function () {
         player2Score.innerText = `${name2.value}: 0`
 
         player1turn = true;
-        upperTxt.innerText = `${name1.value}'s turn`;
+        lowerTxt.innerText = `${name1.value}'s turn`;
     }
 
     lowerTxt.style.display = "none";
@@ -496,8 +496,8 @@ optionsScreenForm.addEventListener('submit', (evt) => {
         player2Score.style.display = 'inline-block';
 
         player1turn = true;
-        upperTxt.innerText = `${name1.value}'s turn`;
-        upperTxt.style.display = "block";
+        lowerTxt.innerText = `${name1.value}'s turn`;
+        lowerTxt.style.display = "block";
     }
 }
 )
